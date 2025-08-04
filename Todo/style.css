@@ -1,0 +1,135 @@
+
+body {
+    background: linear-gradient(to right, #dbeafe, #e0f2f1);
+    margin: 0;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.todoadd {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f1f5f9;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0f172a;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#add {
+    flex: 1;
+    min-width: 200px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 2px solid #38bdf8;
+    color: #0f172a;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#add:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 5px #0ea5e9;
+}
+
+
+#addbtn {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#addbtn:hover {
+    background-color: #0369a1;
+}
+
+
+.todo-list {
+    margin-top: 30px;
+}
+
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.todo-list li {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-list li:hover {
+    background-color: #e0f2fe;
+    transform: scale(1.02);
+}
+
+
+.dltbtn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: crimson;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.dltbtn:hover {
+    color: darkred;
+}
+
+
+li span {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 17px;
+    color: #334155;
+}
+
+
+li input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #dc2626;
+}
+
+
+ul img {
+    display: block;
+    margin: 30px auto 0;
+    width: 200px;
+    opacity: 0.3;
+}
