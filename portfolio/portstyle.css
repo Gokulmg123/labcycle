@@ -5,6 +5,17 @@ body {
   color: #333;
 }
 
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
 nav {
   background: #ffffff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -58,7 +69,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 8rem 4rem 4rem;
-  background: linear-gradient(to right, #f0f8ff, #e6f0fa);
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
   flex-wrap: wrap;
   align-items: center;
 }
@@ -124,8 +135,9 @@ nav {
   font-size: 1.1rem;
 }
 
-.skills {
-  padding: 5rem 2rem;
+#skills {
+  width: 100%;
+  padding: 10rem 20rem;
   background: linear-gradient(to right, #f3f8ff, #dcefff);
 }
 
@@ -151,7 +163,7 @@ nav {
 }
 
 .skill-item {
-  background-color: #f0f8ff;
+  background-color:transparent;
   padding: 0.8rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -170,6 +182,7 @@ nav {
   font-size: 2.5rem;
   color: #0a58ca;
   margin-bottom: 0.5rem;
+  
 }
 
 .skill-item p {
@@ -179,8 +192,8 @@ nav {
 }
 
 #project-container {
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #fff5f7, #ffe8e8);
+  padding: 4rem 6rem;
+ background-color: transparent;
   text-align: center;
 }
 
@@ -188,6 +201,7 @@ nav {
   font-size: 2.4rem;
   margin-bottom: 2rem;
   color: #e63946;
+ 
 }
 
 #projects-item {
@@ -229,4 +243,58 @@ nav {
   font-size: 1rem;
   color: #495057;
   text-align: left;
+}
+#Contact {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#Contact form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#Contact input[type="text"],
+#Contact input[type="email"],
+#Contact input[type="submit"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#Contact input[type="text"]:focus,
+#Contact input[type="email"]:focus,
+#Contact #msg:focus {
+  border-color: #007BFF;
+}
+
+#Contact #msg {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#Contact input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#Contact input[type="submit"]:hover {
+  background-color: #0056b3;
 }
