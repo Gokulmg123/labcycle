@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Articles</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-post" >
+      <h2 >First Post</h2>
+      <p class="date">August 6, 2025</p>
+      <p>this is the first blog page...........</p>
+      <a href="#">Read more</a>
+    </section>
+
+    <section class="blog-post">
+      <h2>Global & Political News</h2>
+      <p class="date">August 2, 2025</p>
+      <p id="firstpost">A Kremlin insider says President Putin is unlikely to comply with a ceasefire ultimatum from U.S. President Trump and still aims to seize full control of four Ukrainian regions 
+Blue Tech Wave Media
++1
+Reuters
++1
+.
+
+NATO-authorized drone carrying explosives allegedly entered NATO territory over Lithuania, signaling escalated risk from regional conflict spillover </p>
+      <a href="#" onclick="readmore();" class="link">Read more</a>
+    </section>
+    <section class="blog-post">
+      <h2> Business & Economy</h2>
+      <p class="date">August 2, 2025</p>
+      <p>A Kremlin insider says President Putin is unlikely to comply with a ceasefire ultimatum from U.S. President Trump and still aims to seize full control of four Ukrainian regions 
+Blue Tech Wave Media
++1
+Reuters
++1
+.
+
+NATO-authorized drone carrying explosives allegedly entered NATO territory over Lithuania, signaling escalated risk from regional conflict spillover </p>
+      <a href="#">Read more</a>
+    </section>
+  
+  </main>
+
+  <script>
+function readmore(){
+    const post=document.getElementById("firstpost");
+const link=document.querySelector(".link");
+if(post.style.display=="none"||post.style.display==""){
+    post.style.display="block";
+    link.textContent="Read Less";
+
+}
+else{
+    post.style.display="none";
+    link.textContent="read more"
+}
+}
+
+  </script>
+</body>
+</html>

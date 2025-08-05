@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff9e6;
+  color: #333;
+}
+
+header {
+ background: linear-gradient(to right, #fceabb, #f8b500);
+;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.blog-post {
+  background:linear-gradient(135deg, #fff9e6, #f8e7a2);;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.09);
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+.blog-post .date {
+  font-size: 0.9rem;
+  color: #777;
+}
+

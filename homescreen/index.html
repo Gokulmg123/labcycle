@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="wallpaper">
+      <div class="google">
+        <i class="fab fa-g"></i>
+      </div>
+
+  
+      <iframe id="appFrame" src="" class="app-frame"></iframe>
+      <button class="close-btn" onclick="closeApp()">✖</button>
+
+      <ul class="apps-grid">
+        <li class="apps" onclick="openApp('https://openai.com')">
+          <i class="fa-solid fa-house"></i>
+        </li>
+        <li class="apps" onclick="openApp('https://www.google.com')">
+          <i class="fa-solid fa-phone"></i>
+        </li>
+        <li class="apps" onclick="openApp('https://www.google.com')">
+          <i class="fab fa-facebook"></i>
+        </li>
+        <li class="apps" onclick="openApp('https://www.google.com')">
+          <i class="fab fa-twitter"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function openApp(url) {
+      const frame = document.getElementById("appFrame");
+      frame.src = url;
+      frame.style.display = "block";
+    }
+    function closeApp() {
+  const frame = document.getElementById("appFrame");
+  frame.src = "";
+  frame.style.display = "none";
+}
+  </script>
+</body>
+</html>
