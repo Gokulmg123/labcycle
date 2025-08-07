@@ -1,11 +1,9 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1f1f1f;
-  background: linear-gradient(to right, #ffffff, #f9f9f9);
+  background: linear-gradient(to right, #ffffff, #f3f4f6);
 }
-
 
 @media (min-width: 600px) {
   body {
@@ -17,7 +15,6 @@ body {
     font-size: 20px;
   }
 }
-
 
 nav {
   background: #ffffff;
@@ -60,13 +57,12 @@ nav {
   color: #0077b6;
 }
 
-
 .hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 8rem 4rem 4rem;
-  background: linear-gradient(to right, #f52121, #f9f9f9);
+  background: linear-gradient(to right, #ffb703, #f9f9f9);
   align-items: center;
 }
 .header {
@@ -95,12 +91,11 @@ nav {
   transform: scale(1.2);
 }
 
-
 .profimg {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   display: flex;
@@ -113,7 +108,6 @@ nav {
   height: 100%;
   object-fit: cover;
 }
-
 
 .aboutheading {
   width: 100%;
@@ -130,13 +124,13 @@ nav {
   margin: 1rem auto 0;
   line-height: 1.8;
   font-size: 1.1rem;
+  color: #343a40;
 }
-
 
 #skills {
   width: 100%;
   padding: 6rem 3rem;
-  background: linear-gradient(to right, #f52121, #f9f9f9);
+  background: linear-gradient(to right, #8ecae6, #edf6f9);
 }
 .section-title {
   text-align: center;
@@ -152,7 +146,7 @@ nav {
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
 }
 .skill-item {
@@ -176,21 +170,20 @@ nav {
   color: #212529;
 }
 
-
 #project-container {
   margin-left: 40px;
   padding: 4rem 4rem;
   background-color: transparent;
   text-align: center;
 }
-
 #projects-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 8rem;
+  gap: 4rem;
   align-items: center;
+  justify-content: center;
 }
-.project{
+.project {
   background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 12px;
@@ -220,10 +213,9 @@ nav {
   text-align: left;
 }
 
-
 #Contact {
   padding: 5rem 2rem;
-  background: linear-gradient(to right, #f52121, #f9f9f9);
+  background: linear-gradient(to right, #ffb703, #f9f9f9);
   display: flex;
   flex-direction: column;
   align-items: center;
